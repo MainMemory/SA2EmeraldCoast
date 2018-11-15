@@ -57,11 +57,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;LEVELTEST_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\Documents\GitHub\sa2-mod-loader\SA2ModLoader\include;E:\Documents\GitHub\sa2-mod-loader\libmodutils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\sa2-mod-loader\SA2ModLoader\include;..\sa2-mod-loader\libmodutils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\bin\libmodutils.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -89,8 +90,6 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\GitHub\sa2-mod-loader\libmodutils\LandTableInfo.cpp" />
-    <ClCompile Include="..\..\..\..\GitHub\sa2-mod-loader\libmodutils\ModelInfo.cpp" />
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="DeathZones.cpp" />
     <ClCompile Include="dllmain.cpp" />

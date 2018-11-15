@@ -35,16 +35,10 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\GitHub\sa2-mod-loader\libmodutils\LandTableInfo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DeathZones.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Splines.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\GitHub\sa2-mod-loader\libmodutils\ModelInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Background.cpp">
